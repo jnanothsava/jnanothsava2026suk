@@ -94,6 +94,41 @@
   line-height: 1.7;
 }
 
+.cultural-stage-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.25rem;
+}
+
+.cultural-stage-link {
+  display: block;
+  padding: 0.95rem 1rem;
+  border-radius: 16px;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.cultural-stage-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.cultural-stage-link span {
+  display: block;
+  color: var(--color-text);
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.cultural-stage-link small {
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+}
+
 @media (max-width: 640px) {
   .events-track--cultural {
     padding: 1.35rem;

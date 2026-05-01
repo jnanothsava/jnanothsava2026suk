@@ -30,14 +30,6 @@ const EventDetail = () => {
         </div>
       </div>
 
-      <div className="event-poster-summary">
-        <span className="event-poster__eyebrow">{event.category} Event</span>
-        <h2 className="event-poster__title">{event.title}</h2>
-        <p className="event-poster__meta">{event.date} | {event.time}</p>
-        <p className="event-poster__venue">{event.venue}</p>
-        {event.fee && <p className="event-poster__fee">{event.fee}</p>}
-      </div>
-
       <div className={`${posterClassName}${event.poster ? ' event-poster--with-image' : ''}`}>
         {event.poster && (
           <img

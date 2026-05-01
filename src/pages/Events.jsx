@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { eventsData } from '../data/events';
 import EventCard from '../components/EventCard';
 import culturalPoster from '../assets/posters/cultural-events.jpeg';
@@ -21,6 +22,14 @@ const Events = () => {
   ];
 
   const culturalEvents = eventsData.filter((event) => event.category === 'Cultural');
+  const culturalStageEventIds = [
+    'singing-competition',
+    'dance-competition',
+    'ramp-walk-competition',
+    'standup-comedy',
+  ];
+  const culturalStageEvents = culturalEvents.filter((event) => culturalStageEventIds.includes(event.id));
+  const otherCulturalEvents = culturalEvents.filter((event) => !culturalStageEventIds.includes(event.id));
 
   return (
     <div className="container animate-fade-in" style={{ padding: '6rem 1.5rem' }}>
@@ -71,16 +80,24 @@ const Events = () => {
             className="cultural-feature__poster"
           />
           <div className="cultural-feature__content">
-            <h3>Cultural Poster Overview</h3>
+            <h3>Cultural Stage Events</h3>
             <p>
-              The cultural lineup includes fine arts, stage competitions, and day-wise performance categories. Solo and group formats are preserved under the respective event pages through sub-event labels.
+              This shared poster covers the main stage lineup. Singing, Dance, Ramp Walk, and Standup Comedy are grouped here with their own detail pages and sub-event breakdowns.
             </p>
+            <div className="cultural-stage-links">
+              {culturalStageEvents.map((event) => (
+                <Link key={event.id} to={`/events/${event.id}`} className="cultural-stage-link">
+                  <span>{event.title}</span>
+                  <small>{event.date} | {event.time}</small>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 
         <section className="category-section category-section--compact">
           <div className="events-grid">
-            {culturalEvents.map((event) => (
+            {otherCulturalEvents.map((event) => (
               <EventCard key={event.id} event={event} />
             ))}
           </div>

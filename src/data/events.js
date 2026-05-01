@@ -1,4 +1,5 @@
 import bugHuntPoster from '../assets/posters/bug-hunt.jpeg';
+import culturalStagePoster from '../assets/posters/cultural-events.jpeg';
 import debatePoster from '../assets/posters/debate.jpeg';
 import promptToAppPoster from '../assets/posters/prompt-to-app.jpeg';
 import roboRacePoster from '../assets/posters/robo-race.jpeg';
@@ -553,14 +554,14 @@ export const eventsData = [
   },
   {
     id: 'bug-hunt',
-    title: 'Bug Hunt (Decoding)',
+    title: 'Bug Hunt (Debugging)',
     category: 'Technical',
     date: '16 May 2026',
     time: '11:30 AM - 01:00 PM',
     venue: '1st Floor, Lab - 2, Dept of Artificial Intelligence and Data Science',
     teamSize: 'As per brochure event desk',
     description:
-      'A debugging and decoding event for participants who enjoy spotting errors, tracing problems, and solving technical challenges under pressure. Bug Hunt (Decoding) is designed to test attention to detail, logical reasoning, and fast correction skills. It is an engaging event for students who like competitive problem-solving in a technical setting.',
+      'A debugging event for participants who enjoy spotting errors, tracing problems, and solving technical challenges under pressure. Bug Hunt is designed to test attention to detail, logical reasoning, and fast correction skills. It is an engaging event for students who like competitive problem-solving in a technical setting.',
     poster: bugHuntPoster,
     posterAlt: 'Bug Hunt event poster',
     detailsSections: [
@@ -901,6 +902,8 @@ export const eventsData = [
     fee: 'Group Singing: Rs. 300 per group | Solo Singing: Rs. 100 per participant',
     description:
       'A vocal performance competition for both solo and group entries where participants showcase singing talent, musical expression, and stage confidence. Performances are judged on vocal quality, pitch accuracy, breath control, expression, and audience connection. This event creates a lively platform for students to celebrate music and performance.',
+    poster: culturalStagePoster,
+    posterAlt: 'Cultural stage events poster',
     subEvents: ['Solo Singing', 'Group Singing', 'Classical', 'Non-Classical'],
     detailsSections: [
       {
@@ -941,6 +944,8 @@ export const eventsData = [
     fee: 'Group Dance: Rs. 300 per group | Solo Dance: Rs. 100 per participant',
     description:
       'A solo and group dance competition featuring styles such as folk, tribal, classical, freestyle, contemporary, and Bollywood. Participants are judged on rhythm, formation, synchronization, expressions, costumes, and overall stage impact. The event offers an energetic platform to showcase performance skill, creativity, and coordination.',
+    poster: culturalStagePoster,
+    posterAlt: 'Cultural stage events poster',
     subEvents: ['Solo Dance', 'Group Dance', 'Folk', 'Classical', 'Western'],
     detailsSections: [
       {
@@ -984,6 +989,8 @@ export const eventsData = [
     fee: 'Group Ramp Walk: Rs. 300 per group | Solo Ramp Walk: Rs. 100 per participant',
     description:
       'A themed solo and group ramp walk event where participants present costumes and concepts with confidence, attitude, and stage presence. Judging focuses on creativity, originality, theme interpretation, choreography, and use of the ramp. This event blends fashion, performance, and cultural expression in an exciting presentation format.',
+    poster: culturalStagePoster,
+    posterAlt: 'Cultural stage events poster',
     subEvents: ['Solo Ramp Walk', 'Group Ramp Walk', 'Traditional', 'Cultural', 'Mythological', 'Historical', 'Indo Western', 'Retro'],
     detailsSections: [
       {
@@ -1023,6 +1030,8 @@ export const eventsData = [
     fee: 'Rs. 100 per participant',
     description:
       'A solo standup comedy event where participants entertain the audience through clean humor, original content, and confident stage delivery. Judging is based on comic timing, storytelling, audience response, and overall presentation. This event is ideal for performers who can engage a crowd with wit, creativity, and strong stage presence.',
+    poster: culturalStagePoster,
+    posterAlt: 'Cultural stage events poster',
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
