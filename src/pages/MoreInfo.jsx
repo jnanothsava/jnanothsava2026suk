@@ -84,44 +84,48 @@ const MoreInfo = () => {
             <h3 className="section-subhead">{day.title}</h3>
 
             <h4 className="section-subhead" style={{ fontSize: '1rem', marginTop: '1rem' }}>Competitive Events</h4>
-            <table className="more-info-table">
-              <thead>
-                <tr>
-                  <th>Time</th>
-                  <th>Event</th>
-                  <th>Venue</th>
-                </tr>
-              </thead>
-              <tbody>
-                {day.competitive.map((event) => (
-                  <tr key={event.id}>
-                    <td>{event.time}</td>
-                    <td>{event.title}</td>
-                    <td>{event.venue}</td>
+            <div className="more-info-table-wrap">
+              <table className="more-info-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Venue</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {day.competitive.map((event) => (
+                    <tr key={event.id}>
+                      <td data-label="Time">{event.time}</td>
+                      <td data-label="Event">{event.title}</td>
+                      <td data-label="Venue">{event.venue}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
 
             <h4 className="section-subhead" style={{ fontSize: '1rem', marginTop: '1rem' }}>Cultural Events</h4>
-            <table className="more-info-table">
-              <thead>
-                <tr>
-                  <th>Time</th>
-                  <th>Event</th>
-                  <th>Venue</th>
-                </tr>
-              </thead>
-              <tbody>
-                {day.cultural.map((event) => (
-                  <tr key={event.id}>
-                    <td>{event.time}</td>
-                    <td>{event.title}</td>
-                    <td>{event.venue}</td>
+            <div className="more-info-table-wrap">
+              <table className="more-info-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Venue</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {day.cultural.map((event) => (
+                    <tr key={event.id}>
+                      <td data-label="Time">{event.time}</td>
+                      <td data-label="Event">{event.title}</td>
+                      <td data-label="Venue">{event.venue}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         ))}
       </div>
@@ -150,6 +154,14 @@ const MoreInfo = () => {
               <span><strong>Dr. Sridevi M H</strong></span>
               <a href="tel:9538626926" style={{ color: 'var(--color-secondary-light)' }}>9538626926</a>
             </div>
+            <div className="committee-member">
+              <span><strong>Dr. Nagbasvanna Gurgol</strong></span>
+              <a href="tel:9731782555" style={{ color: 'var(--color-secondary-light)' }}>9731782555</a>
+            </div>
+            <div className="committee-member">
+              <span><strong>Prof. Maheshchandra</strong></span>
+              <a href="tel:8088489456" style={{ color: 'var(--color-secondary-light)' }}>8088489456</a>
+            </div>
           </div>
 
           <div className="committee-card">
@@ -158,6 +170,14 @@ const MoreInfo = () => {
               <span><strong>Dr. Swati K</strong></span>
               <a href="tel:8050604096" style={{ color: 'var(--color-secondary-light)' }}>8050604096</a>
             </div>
+            <div className="committee-member">
+              <span><strong>Dr. Pallavi Patil</strong></span>
+              <a href="tel:8123756049" style={{ color: 'var(--color-secondary-light)' }}>8123756049</a>
+            </div>
+            <div className="committee-member">
+              <span><strong>Prof. Dhanraj</strong></span>
+              <a href="tel:9880024049" style={{ color: 'var(--color-secondary-light)' }}>9880024049</a>
+            </div>
           </div>
 
           <div className="committee-card">
@@ -165,6 +185,18 @@ const MoreInfo = () => {
             <div className="committee-member">
               <span><strong>Dr. Archana K</strong></span>
               <a href="tel:9060867912" style={{ color: 'var(--color-secondary-light)' }}>9060867912</a>
+            </div>
+            <div className="committee-member">
+              <span><strong>Prof. Bhagyalaxmi Koti</strong></span>
+              <a href="tel:9902903533" style={{ color: 'var(--color-secondary-light)' }}>9902903533</a>
+            </div>
+            <div className="committee-member">
+              <span><strong>Prof. Geeta N</strong></span>
+              <a href="tel:8884023906" style={{ color: 'var(--color-secondary-light)' }}>8884023906</a>
+            </div>
+            <div className="committee-member">
+              <span><strong>Prof. Priyanka</strong></span>
+              <a href="tel:9035183629" style={{ color: 'var(--color-secondary-light)' }}>9035183629</a>
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ const Events = () => {
     {
       title: 'Technical Events',
       intro:
-        'Coding contests, expos, robotics, design, and innovation challenges drawn directly from the official brochure.',
+        'Sharnbasva University is celebrating a Techno-Cultural Festival featuring various exciting technical events aimed at encouraging innovation, creativity, teamwork, and practical learning among students. Events such as Hackathon, CAD War, Robo Race, Project Expo, Coding, Bug Hunt, Technical Quiz, and other competitions provide a platform for participants to showcase their technical knowledge, problem-solving abilities, and innovative ideas. These events help students gain hands-on experience, improve analytical and communication skills, and explore emerging technologies in a competitive and collaborative environment.',
       events: eventsData.filter((event) => event.category === 'Technical'),
     },
     {
@@ -43,9 +43,9 @@ const Events = () => {
       <section className="events-track">
         <div className="track-header">
           <p className="track-kicker">Competitions</p>
-          <h2 className="track-title">Technical and Management Events</h2>
+          <h2 className="track-title">Technical, Management and Cultural Events</h2>
           <p className="track-copy">
-            Explore the academic, technical, and strategy-focused events taking place across both fest days.
+            Explore the academic, technical, strategy-focused, and cultural events taking place across both fest days.
           </p>
         </div>
 

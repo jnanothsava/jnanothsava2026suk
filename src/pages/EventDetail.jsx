@@ -59,7 +59,7 @@ const EventDetail = () => {
 
       {event.topics && event.topics.length > 0 && (
         <div className="event-content-section">
-          <h2><Sparkles size={24} className="text-gradient" /> Topics</h2>
+          <h2><Sparkles size={24} className="text-gradient" /> {event.topicsTitle || 'Topics'}</h2>
           <ul className="detail-list">
             {event.topics.map((topic, index) => <li key={index}>{topic}</li>)}
           </ul>
