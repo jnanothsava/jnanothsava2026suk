@@ -30,9 +30,16 @@
 .event-card-title {
   font-size: 1.35rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.65rem;
   color: var(--color-text);
   line-height: 1.25;
+}
+
+.event-card-meta {
+  color: var(--color-primary-light);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.85rem;
 }
 
 .event-card-desc {

@@ -30,21 +30,40 @@ const EventDetail = () => {
         </div>
       </div>
 
-      <div className={posterClassName}>
+      <div className="event-poster-summary">
+        <span className="event-poster__eyebrow">{event.category} Event</span>
+        <h2 className="event-poster__title">{event.title}</h2>
+        <p className="event-poster__meta">{event.date} | {event.time}</p>
+        <p className="event-poster__venue">{event.venue}</p>
+        {event.fee && <p className="event-poster__fee">{event.fee}</p>}
+      </div>
+
+      <div className={`${posterClassName}${event.poster ? ' event-poster--with-image' : ''}`}>
+        {event.poster && (
+          <img
+            src={event.poster}
+            alt={event.posterAlt || `${event.title} poster`}
+            className="event-poster__image"
+          />
+        )}
         <div className="event-poster__glow" />
-        <div className="event-poster__content">
-          <span className="event-poster__eyebrow">{event.category} Event</span>
-          <h2 className="event-poster__title">{event.title}</h2>
-          <p className="event-poster__meta">{event.date} | {event.time}</p>
-          <p className="event-poster__venue">{event.venue}</p>
-          {event.fee && <p className="event-poster__fee">{event.fee}</p>}
-        </div>
       </div>
 
       <div className="event-content-section">
-        <h2><BookOpen size={24} className="text-gradient" /> Description</h2>
+        <h2><BookOpen size={24} className="text-gradient" /> About the Event</h2>
         <p className="event-body-copy">{event.description}</p>
       </div>
+
+      {event.subEvents && event.subEvents.length > 0 && (
+        <div className="event-content-section">
+          <h2><Sparkles size={24} className="text-gradient" /> Sub Events</h2>
+          <div className="sub-events-wrap">
+            {event.subEvents.map((item) => (
+              <span key={item} className="sub-event-chip">{item}</span>
+            ))}
+          </div>
+        </div>
+      )}
 
       {event.topics && event.topics.length > 0 && (
         <div className="event-content-section">

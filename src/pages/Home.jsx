@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Code, Briefcase, Music, Award, FileText, CalendarDays, ArrowRight } from 'lucide-react';
+import concertPoster from '../assets/posters/live-in-concert.jpeg';
 import './Home.css';
 
 const Home = () => {
@@ -46,6 +47,21 @@ const Home = () => {
               <CalendarDays size={22} />
               <span>Schedule</span>
             </a>
+          </div>
+
+          <div className="concert-spotlight glass-panel">
+            <img
+              src={concertPoster}
+              alt="Aishwarya Rangarajan live in concert poster"
+              className="concert-spotlight-poster"
+            />
+            <div className="concert-spotlight-copy">
+              <p className="concert-spotlight-label">Special Attraction</p>
+              <h3>Live in Concert by Aishwarya Rangarajan</h3>
+              <p>
+                Featured on 15 May in Kalaburagi as part of the Jnanothsava 2026 cultural celebrations.
+              </p>
+            </div>
           </div>
         </div>
       </section>

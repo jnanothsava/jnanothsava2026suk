@@ -1,3 +1,9 @@
+import bugHuntPoster from '../assets/posters/bug-hunt.jpeg';
+import debatePoster from '../assets/posters/debate.jpeg';
+import promptToAppPoster from '../assets/posters/prompt-to-app.jpeg';
+import roboRacePoster from '../assets/posters/robo-race.jpeg';
+import visualArtPoster from '../assets/posters/spot-painting-mandala-art.jpeg';
+
 export const eventsData = [
   {
     id: 'hackathon-enlighten-code',
@@ -8,7 +14,7 @@ export const eventsData = [
     venue: 'University Central Library',
     teamSize: '4 - 6 members',
     description:
-      'A 12-hour hackathon focused on building original solutions during the event itself. Teams are judged on novelty, clarity, feasibility, practicability, and scalability.',
+      'A 12-hour hackathon where teams build original solutions during the event. Projects are judged on novelty, clarity, feasibility, practicability, and scalability. Join this exciting event that brings together passionate students to create innovative solutions to real-world problems within a limited time.',
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
@@ -49,7 +55,7 @@ export const eventsData = [
     venue: '2nd Floor, Seminar Hall, Dept of CSE, Faculty of Engineering and Technology (Exclusively for Women)',
     teamSize: 'Individual or team (maximum 2)',
     description:
-      'A coding contest where participants solve any two problems from the given problem set within a single two-hour round.',
+      'A coding challenge where participants solve any two problems from the given problem set within a single round. Open to individuals or teams of up to two members, this event tests logical thinking, speed, and programming skills. It is a great opportunity to compete, collaborate, and showcase problem-solving ability under time pressure.',
     detailsSections: [
       {
         title: 'General Rules',
@@ -92,7 +98,9 @@ export const eventsData = [
     venue: 'Seminar Hall, Mechanical Engineering Department (Co-Ed)',
     teamSize: '2 - 4 participants',
     description:
-      'A robotics race where manually controlled wireless bots navigate a track with checkpoints and obstacles under specification limits.',
+      'A robotics race where manually controlled wireless bots compete on a track with checkpoints and obstacles. Teams must design a bot within the specified size, weight, and power limits and guide it successfully to the finish line. This event combines technical creativity, speed, and control in an exciting competitive format.',
+    poster: roboRacePoster,
+    posterAlt: 'Robo Race event poster',
     detailsSections: [
       {
         title: 'General Rules',
@@ -140,7 +148,7 @@ export const eventsData = [
     venue: '3rd Floor, Seminar Hall, BCA (Exclusively for Women)',
     teamSize: 'Individual or team (maximum 5)',
     description:
-      'A student-built digital innovation showcase featuring domains like IoT, AI/ML, robotics, and smart systems.',
+      'A student innovation showcase featuring digital models and ideas from domains such as IoT, AI/ML, robotics, and smart systems. Participants may take part individually or in teams and present projects that are original, student-built, and practically useful. This event highlights creativity, technical application, and future-ready thinking.',
     detailsSections: [
       {
         title: 'General Rules',
@@ -176,11 +184,11 @@ export const eventsData = [
     title: 'Lens Race (Photography)',
     category: 'Technical',
     date: '15 May 2026',
-    time: '10:00 AM - 11:30 PM',
+    time: '10:00 AM - 11:30 AM',
     venue: 'Energy Engineering Department (Co-Ed)',
     teamSize: 'Individual',
     description:
-      'A time-bound photography challenge conducted on campus, with theme-led submissions and strict originality rules.',
+      'A time-bound photography challenge where participants capture original images within the university campus during the event window. Themes are announced in advance, and entries are judged on originality, composition, and visual storytelling. The event encourages creativity, observation, and ethical photography with only basic editing allowed.',
     detailsSections: [
       {
         title: 'Competition Format',
@@ -256,7 +264,7 @@ export const eventsData = [
     venue: '2nd Floor, Department of Mathematics, Faculty of Science and Technology, S.B. College of Science, Gulbarga',
     teamSize: 'Individual or teams (maximum 2 - 3 members)',
     description:
-      'A themed project exhibition for science, innovation, engineering, sustainability, mathematical modelling, and AI/data science work.',
+      'A project exhibition that provides students with a platform to present original scientific and technical models. Projects may be based on science and innovation, engineering models, environmental sustainability, mathematical modelling, artificial intelligence, data science, and global challenges. This event promotes creativity, research thinking, and practical demonstration of ideas.',
     detailsSections: [
       {
         title: 'General Guidelines',
@@ -320,7 +328,9 @@ export const eventsData = [
     venue: 'CISCO Lab',
     teamSize: 'As per brochure presentation format',
     description:
-      'An AI-based application development challenge where participants must build an original application using AI tools and present a working demo.',
+      'An AI-based application development challenge where participants create an original application using tools such as ChatGPT, Copilot, or Gemini. The event focuses on innovation, smart use of AI, and clear presentation of a working demo. Participants get a chance to transform ideas into functional solutions using modern AI-assisted workflows.',
+    poster: promptToAppPoster,
+    posterAlt: 'Prompt to App event poster',
     detailsSections: [
       {
         title: 'Key Rules',
@@ -356,7 +366,7 @@ export const eventsData = [
     venue: 'Department of Civil Engineering (Co-ed)',
     teamSize: 'Individual',
     description:
-      'An AutoCAD design challenge focused on producing a residential building plan and elevation with dimensional accuracy and professional layer organization.',
+      'An AutoCAD design competition focused on creating a residential building plan and elevation for a 40 ft x 60 ft plot. Participants must follow standard planning guidelines, government setback rules, and maintain professional layer organization with clear dimensions. The event tests drafting accuracy, planning sense, and technical design presentation.',
     detailsSections: [
       {
         title: 'General Rules',
@@ -403,7 +413,7 @@ export const eventsData = [
     venue: 'Seminar Hall, Faculty of Computer Applications',
     teamSize: 'Individual or max 2',
     description:
-      'A handmade poster event centered on clear technical communication, structured presentation, and a short walkthrough of the project.',
+      'A handmade poster event where participants present their project or idea in a clear, visually engaging, and informative format. The poster should include title, abstract, objectives, methods, results, and conclusion, followed by a short explanation to the audience. This event rewards clarity, originality, presentation skills, and effective visual communication.',
     detailsSections: [
       {
         title: 'Poster Rules',
@@ -446,7 +456,7 @@ export const eventsData = [
     venue: '3rd Floor, Seminar Hall, Dept of AIML',
     teamSize: 'Team of 2',
     description:
-      'A multi-round technology quiz with prelims, stage rounds, buzzer, recent trends, audio-visual, and rapid fire segments.',
+      'A multi-round technical quiz for teams of two that includes a preliminary written round followed by exciting stage rounds. Participants face general questions, buzzer challenges, recent trends, audio-visual prompts, and rapid-fire questions. This event is ideal for students who enjoy technology, quick recall, and competitive teamwork.',
     detailsSections: [
       {
         title: 'Competition Rules',
@@ -499,7 +509,9 @@ export const eventsData = [
     venue: '1st Floor, Room 1, MSc Physics Class, S B College of Science',
     teamSize: '2 - 3 participants',
     description:
-      'A formal structured debate where teams argue for or against the assigned topic with speaking and rebuttal time.',
+      'A formal debate competition where teams speak either for or against the assigned topic in a structured format. Participants are judged on content, clarity, confidence, argument strength, rebuttal skills, and time management. The event encourages thoughtful discussion, respectful expression, and strong public speaking ability.',
+    poster: debatePoster,
+    posterAlt: 'Debate Competition event poster',
     topics: [
       'Biological warfare is the greatest threat to human health.',
       'AI makes education more accessible and inclusive.',
@@ -548,7 +560,9 @@ export const eventsData = [
     venue: '1st Floor, Lab - 2, Dept of Artificial Intelligence and Data Science',
     teamSize: 'As per brochure event desk',
     description:
-      'A debugging-focused technical event listed in the brochure as Bug Hunt (Decoding), with coordinator and venue details provided.',
+      'A debugging and decoding event for participants who enjoy spotting errors, tracing problems, and solving technical challenges under pressure. Bug Hunt (Decoding) is designed to test attention to detail, logical reasoning, and fast correction skills. It is an engaging event for students who like competitive problem-solving in a technical setting.',
+    poster: bugHuntPoster,
+    posterAlt: 'Bug Hunt event poster',
     detailsSections: [
       {
         title: 'Brochure Details',
@@ -575,7 +589,7 @@ export const eventsData = [
     venue: '1st Floor Electronics and Communication Engineering, Faculty of Engineering and Technology (Exclusively for Women), Sharnbasva University, Kalaburagi',
     teamSize: 'Individual or maximum 5 members',
     description:
-      'A technical project exhibition where participants can present projects using charts, posters, or digital presentations along with institutional approval.',
+      'A technical project exhibition where students present innovative ideas through models, charts, posters, or digital presentations. Participants may compete individually or in teams and showcase their work with institutional approval. This event creates a platform to demonstrate practical knowledge, creativity, and presentation excellence.',
     detailsSections: [
       {
         title: 'Rules',
@@ -612,7 +626,7 @@ export const eventsData = [
     venue: 'Doddappa Appa Sabha Mantap',
     teamSize: 'Generally 2 members per team',
     description:
-      'A management quiz built around prelims, final rounds, buzzer, audio-visual, and rapid-fire formats, with strict conduct and scoring rules.',
+      'A management quiz competition that tests business awareness, presence of mind, and team coordination. Teams compete through preliminary and final rounds that may include direct questions, buzzer segments, audio-visual prompts, and rapid fire. This event is perfect for participants who enjoy strategy, current affairs, and competitive quizzing.',
     detailsSections: [
       {
         title: 'General Rules',
@@ -665,7 +679,7 @@ export const eventsData = [
     venue: 'Doddappa Appa Sabha Mantap',
     teamSize: 'Participant/team as per game desk',
     description:
-      'A stock-market simulation game built around virtual capital, diversified portfolios, multiple trading sessions, and portfolio-based evaluation.',
+      'A stock market simulation game where participants manage virtual capital and build diversified portfolios across multiple trading sessions. The event focuses on decision-making, trading strategy, and portfolio performance in a competitive environment. It offers an engaging introduction to market thinking and financial analysis.',
     detailsSections: [
       {
         title: 'Game Setup',
@@ -715,7 +729,7 @@ export const eventsData = [
     venue: 'Lecture Hall 1, Department of English, Faculty of Languages',
     teamSize: 'Individual',
     description:
-      'A creative rangoli competition where participants complete their design within the allotted time using their own materials.',
+      'A creative rangoli competition where participants design and complete their artwork within the allotted time using their own materials. The event celebrates color sense, neatness, symmetry, and originality while allowing participants to interpret a theme or create a unique design. It is a vibrant cultural activity that showcases artistic skill and tradition.',
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
@@ -741,7 +755,7 @@ export const eventsData = [
     venue: 'Department of Kannada, Faculty of Languages',
     teamSize: 'Individual',
     description:
-      'A mehandi design competition with a fixed 90-minute creation window and strict originality requirements.',
+      'A mehandi design competition where participants create detailed and original patterns within a fixed 90-minute duration. The event highlights creativity, precision, and patience while strictly avoiding ready-made stickers, stencils, or copied designs. It provides a platform for participants to showcase artistic expression through traditional body art.',
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
@@ -768,7 +782,7 @@ export const eventsData = [
     venue: 'Lecture Hall 1, Department of Kannada, Faculty of Languages',
     teamSize: 'Individual / team as per submission',
     description:
-      'A short-form reel-making event focused on delivering a strong social-awareness message in an original, audience-friendly format.',
+      'A short-form reel-making event centered on social awareness themes such as health, environment, education, and public responsibility. Participants create original 30 to 60 second reels that deliver a clear, respectful, and impactful message. This event combines creativity, digital storytelling, and social relevance in an engaging format.',
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
@@ -795,7 +809,9 @@ export const eventsData = [
     venue: 'M.A. in Visual Art Department',
     teamSize: 'Individual',
     description:
-      'A live painting event where participants create original artwork within a two-hour window using their own materials.',
+      'A live painting event where participants create an original artwork on the spot within a two-hour duration. The competition encourages imagination, artistic discipline, and fresh visual expression using self-brought materials along with the drawing sheet provided by the department. It is a space for artists to display creativity in real time.',
+    poster: visualArtPoster,
+    posterAlt: 'Spot Painting and Mandala Art event poster',
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
@@ -824,7 +840,9 @@ export const eventsData = [
     venue: 'M.A. in Visual Art Department',
     teamSize: 'Individual',
     description:
-      'A focused mandala art event using the same art-event guidelines, with emphasis on originality and in-person participation.',
+      'A focused mandala art event where participants create detailed circular designs that emphasize balance, pattern, and visual harmony. Conducted within a fixed time, the event values originality, patience, and artistic precision. It offers participants a chance to showcase concentration, creativity, and decorative design skill.',
+    poster: visualArtPoster,
+    posterAlt: 'Spot Painting and Mandala Art event poster',
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
@@ -853,7 +871,7 @@ export const eventsData = [
     venue: 'Architecture Department',
     teamSize: 'Individual or teams (max 3 - 4 members)',
     description:
-      'A themed design event where participants create presentation-ready wearable concepts primarily from waste materials.',
+      'A themed cultural design event where participants create wearable outfits primarily from waste materials such as paper, cardboard, plastic bottles, fabric waste, and similar items. The event highlights sustainability, creativity, styling, and presentation through concept-based costume design and a short display on stage. It encourages participants to turn discarded materials into imaginative fashion statements.',
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
@@ -877,12 +895,13 @@ export const eventsData = [
     title: 'Singing Competition',
     category: 'Cultural',
     date: '15 May 2026',
-    time: '02:30 AM',
+    time: '02:30 PM',
     venue: 'Doddappa Sabha Mantap',
     teamSize: 'Group song: 4 - 8 participants | Solo: individual',
     fee: 'Group Singing: Rs. 300 per group | Solo Singing: Rs. 100 per participant',
     description:
-      'A vocal performance event for solo and group entries, judged on vocal quality, stage presence, and expressive delivery.',
+      'A vocal performance competition for both solo and group entries where participants showcase singing talent, musical expression, and stage confidence. Performances are judged on vocal quality, pitch accuracy, breath control, expression, and audience connection. This event creates a lively platform for students to celebrate music and performance.',
+    subEvents: ['Solo Singing', 'Group Singing', 'Classical', 'Non-Classical'],
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
@@ -921,7 +940,8 @@ export const eventsData = [
     teamSize: 'Group dance: 4 - 6 participants | Solo: individual',
     fee: 'Group Dance: Rs. 300 per group | Solo Dance: Rs. 100 per participant',
     description:
-      'A solo and group dance competition spanning multiple dance styles, with judging based on rhythm, formation, expression, costume, and overall effect.',
+      'A solo and group dance competition featuring styles such as folk, tribal, classical, freestyle, contemporary, and Bollywood. Participants are judged on rhythm, formation, synchronization, expressions, costumes, and overall stage impact. The event offers an energetic platform to showcase performance skill, creativity, and coordination.',
+    subEvents: ['Solo Dance', 'Group Dance', 'Folk', 'Classical', 'Western'],
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
@@ -963,7 +983,8 @@ export const eventsData = [
     teamSize: 'Group Ramp Walk: 4 - 6 participants | Solo: individual',
     fee: 'Group Ramp Walk: Rs. 300 per group | Solo Ramp Walk: Rs. 100 per participant',
     description:
-      'A themed solo and group ramp walk event judged on costume creativity, confidence, theme interpretation, and ramp use.',
+      'A themed solo and group ramp walk event where participants present costumes and concepts with confidence, attitude, and stage presence. Judging focuses on creativity, originality, theme interpretation, choreography, and use of the ramp. This event blends fashion, performance, and cultural expression in an exciting presentation format.',
+    subEvents: ['Solo Ramp Walk', 'Group Ramp Walk', 'Traditional', 'Cultural', 'Mythological', 'Historical', 'Indo Western', 'Retro'],
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
@@ -1001,7 +1022,7 @@ export const eventsData = [
     teamSize: 'Individual',
     fee: 'Rs. 100 per participant',
     description:
-      'A solo standup comedy event built around clean content, strong delivery, audience connection, and stage presence.',
+      'A solo standup comedy event where participants entertain the audience through clean humor, original content, and confident stage delivery. Judging is based on comic timing, storytelling, audience response, and overall presentation. This event is ideal for performers who can engage a crowd with wit, creativity, and strong stage presence.',
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
