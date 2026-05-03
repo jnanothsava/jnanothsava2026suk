@@ -13,8 +13,8 @@ const Contact = () => {
           <h3>Technical Event Co-ordinators</h3>
           <p className="muted-copy" style={{ marginTop: '0.5rem', lineHeight: '1.8' }}>
             Dr. Gajendran Malshetty: <a href="tel:+919036251072" style={{ color: 'inherit' }}>+91 90362 51072</a><br />
-            Dr. Sridevi Hosmani: <a href="tel:+919538626926" style={{ color: 'inherit' }}>+91 95386 26926</a><br />
-            Dr. Nagbasavanna Guragol: <a href="tel:+919731782555" style={{ color: 'inherit' }}>+91 97317 82555</a>
+            Dr. Sridevi M Hosmani: <a href="tel:+919538626926" style={{ color: 'inherit' }}>+91 95386 26926</a><br />
+            Dr. Nagbasvanna Gurgol: <a href="tel:+919731782555" style={{ color: 'inherit' }}>+91 97317 82555</a>
           </p>
         </div>
 
@@ -42,10 +42,9 @@ const Contact = () => {
           <Phone size={40} className="text-gradient" style={{ margin: '0 auto 1rem' }} />
           <h3>Registration Committee</h3>
           <p className="muted-copy" style={{ marginTop: '0.5rem', lineHeight: '1.8' }}>
-            Dr. Archana K: <a href="tel:+919060867912" style={{ color: 'inherit' }}>+91 90608 67912</a><br />
+            Dr. Archana M Kinagi: <a href="tel:+919060867912" style={{ color: 'inherit' }}>+91 90608 67912</a><br />
             Prof. Bhagyalaxmi Koti: <a href="tel:+919902903533" style={{ color: 'inherit' }}>+91 99029 03533</a><br />
-            Prof. Geeta N: <a href="tel:+918884023906" style={{ color: 'inherit' }}>+91 88840 23906</a><br />
-            Prof. Priyanka: <a href="tel:+919035183629" style={{ color: 'inherit' }}>+91 90351 83629</a>
+            Prof. Geeta N: <a href="tel:+918884023906" style={{ color: 'inherit' }}>+91 88840 23906</a>
           </p>
         </div>
 

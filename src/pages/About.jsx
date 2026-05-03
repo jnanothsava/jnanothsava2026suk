@@ -30,7 +30,7 @@ const About = () => {
         </h2>
         <div className="muted-copy">
           <p style={{ marginBottom: '1.2rem' }}>
-            <strong>Jnanothsava 2026</strong>, the biennial Techno-Cultural Fest of Sharnbasva University, is a vibrant celebration of knowledge, innovation, and creativity, scheduled to be held on 15th and 16th May 2026.
+            <strong>Jnanothsava 2026</strong>, the Techno-Cultural Fest of Sharnbasva University, is a vibrant celebration of knowledge, innovation, and creativity, scheduled to be held on 15th and 16th May 2026.
           </p>
           <p style={{ marginBottom: '1.2rem' }}>
             The fest brings together students from various institutions, offering a dynamic platform to showcase talent, exchange ideas, and engage in meaningful competition. With a thoughtfully curated schedule, Jnanothsava features a diverse range of technical, management, and cultural events.
@@ -53,37 +53,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* Chancellor Message */}
-      <div className="content-panel content-panel--spacious" style={{ position: 'relative' }}>
-        <h2 className="section-title section-title--left" style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>
-          <span className="text-gradient">Chancellor</span> Message
-        </h2>
-        <div className="muted-copy" style={{ fontStyle: 'italic', position: 'relative', zIndex: 1 }}>
-          <span style={{ fontSize: '4rem', color: 'var(--color-primary)', opacity: 0.2, position: 'absolute', top: '-20px', left: '-15px', fontFamily: 'serif', lineHeight: 1 }}>"</span>
-          <p style={{ marginBottom: '1.2rem' }}>
-            Dear Friends and students,
-          </p>
-          <p style={{ marginBottom: '1.2rem' }}>
-            It is with immense pleasure and pride to extend my warm greetings to welcome you all on the occasion of Jnanothsava 2026, the biennial Techno-Cultural Fest of Sharnbasva University.
-          </p>
-          <p style={{ marginBottom: '1.2rem' }}>
-            Jnanothsava stands as a vibrant celebration of knowledge, creativity, and innovation. Such platforms play a vital role in nurturing young minds by encouraging them to think beyond classrooms, explore their talents, and engage in healthy competition. The blend of technical and cultural activities reflects the holistic development that our institution strives to promote.
-          </p>
-          <p style={{ marginBottom: '1.2rem' }}>
-            It will motivate students to demonstrate their talents, share ideas, and foster meaningful connections. Activities such as coding competitions, hackathons, quizzes, and cultural performances not only strengthen skills but also nurture teamwork, leadership, and confidence.
-          </p>
-          <p style={{ marginBottom: '1.5rem' }}>
-            Let us unite to innovate, uplift, and celebrate the future we are collectively shaping.
-          </p>
-          <div style={{ marginTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem' }}>
-            <p style={{ marginBottom: '0.25rem', fontStyle: 'normal', fontWeight: 'bold', color: 'var(--color-text)' }}>With best wishes,</p>
-            <p style={{ marginBottom: '0.25rem', fontStyle: 'normal', color: 'var(--color-primary-light)' }}>Chancellor</p>
-            <p style={{ marginBottom: '0.25rem', fontStyle: 'normal' }}>Sharnbasva University</p>
-            <p style={{ margin: 0, fontStyle: 'normal' }}>Kalaburagi</p>
-          </div>
-        </div>
-      </div>
-      
+
     </div>
   );
 };

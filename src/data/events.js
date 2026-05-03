@@ -73,7 +73,7 @@ export const eventsData = [
     category: 'Technical',
     date: '15 May 2026',
     time: '10:00 AM - 12:00 Noon',
-    venue: '2nd Floor, Seminar Hall, Dept of CSE, Faculty of Engineering and Technology (Exclusively for Women)',
+    venue: '2nd Floor, CSE Lab, Dept of CSE, Faculty of Engineering and Technology (Exclusively for Women)',
     teamSize: 'Individual or team (maximum 2)',
     description:
       'This coding event is designed to test participants’ programming skills, logical thinking, and problem-solving abilities. Participants will solve a set of challenges within a given time, showcasing their efficiency, accuracy, and coding expertise.',
@@ -111,7 +111,7 @@ export const eventsData = [
     category: 'Technical',
     date: '15 May 2026',
     time: '10:00 AM - 11:30 AM',
-    venue: 'Seminar Hall, Mechanical Engineering Department (Co-Ed)',
+    venue: '1st Floor, Seminar Hall, Mechanical Engineering Department (Co-Ed)',
     teamSize: '2 - 4 participants',
     description:
       'Robo Race involves manually controlled or autonomous robots competing to complete a track in the shortest time. The track may include hurdles like sharp turns, ramps, zig-zag paths, and uneven surfaces.',
@@ -146,7 +146,7 @@ export const eventsData = [
     category: 'Technical',
     date: '15 May 2026',
     time: '10:00 AM - 11:30 AM',
-    venue: '3rd Floor, Seminar Hall, BCA (Exclusively for Women)',
+    venue: '3rd floor, Seminar Hall, BCA (Exclusively for Women)',
     teamSize: 'Individual or team (maximum 5)',
     description:
       'DiGi World is a technology-focused event; all activities must align with digital or IoT-related themes. Participants can register individually or in teams, as specified for each event. All participants are expected to uphold the spirit of innovation and teamwork throughout the DiGi World event to showcase and discuss advancements in AI, cybersecurity, fintech, edtech, IoT, and digital governance. It serves as a platform for learning, networking, and exploring how digital technologies are transforming businesses and society.',
@@ -254,7 +254,7 @@ export const eventsData = [
     category: 'Technical',
     date: '15 May 2026',
     time: '11:00 AM - 12:30 PM',
-    venue: '2nd Floor, Department of Mathematics, Faculty of Science and Technology, S.B. College of Science, Gulbarga',
+    venue: '2nd Floor, Department of Mathematics, Faculty of Science and Technology S.B College of Science Gulbarga',
     teamSize: 'Individual or teams (maximum 2 - 3 members)',
     description:
       'A Science Exhibition is an interactive academic event where students present innovative ideas through working models, experiments, and research-based projects. It serves as a platform to transform theoretical knowledge into practical applications, allowing participants to demonstrate how science can be used to solve real-world problems.',
@@ -383,7 +383,7 @@ export const eventsData = [
     category: 'Technical',
     date: '15 May 2026',
     time: '02:00 PM - 04:00 PM',
-    venue: 'Seminar Hall, Faculty of Computer Applications',
+    venue: '1st Floor, Seminar Hall, Faculty of Computer Applications',
     teamSize: 'Individual or max 2',
     description:
       'Poster Presentation is a technical event where participants visually present their ideas, research, or concepts using well-designed posters. It combines creativity with technical knowledge, allowing students to communicate complex information in a clear and engaging format.',
@@ -426,7 +426,7 @@ export const eventsData = [
     category: 'Technical',
     date: '15 May 2026',
     time: '03:00 PM - 05:00 PM',
-    venue: '3rd Floor, Seminar Hall, Dept of AIML',
+    venue: '3rd Floor, Seminar Hall, Dept of AI & ML',
     teamSize: 'Team of 2',
     description:
       'Tech Quiz is an interactive and knowledge-based competition designed to test participants’ technical awareness, problem-solving ability, and understanding of current and emerging technologies. The event includes questions from various domains such as computer science, engineering, programming, general technology, inventions, current trends, and aptitude. The objective of the event is to enhance technical knowledge, analytical thinking, teamwork, and competitive spirit among students.',
@@ -480,7 +480,7 @@ export const eventsData = [
     category: 'Technical',
     date: '15 May 2026',
     time: '03:00 PM - 05:00 PM',
-    venue: '1st Floor, Room 1, MSc Physics Class, S B College of Science',
+    venue: '1st Floor, Room1, MSc Physics Class, S B College of Science',
     teamSize: '2 - 3 participants',
     description:
       'Debate is an intellectual and interactive event where participants present and defend their viewpoints on a given topic. It focuses on critical thinking, communication skills, and the ability to argue logically and confidently.',
@@ -531,7 +531,7 @@ export const eventsData = [
     category: 'Technical',
     date: '16 May 2026',
     time: '11:30 AM - 01:00 PM',
-    venue: '1st Floor, Lab - 2, Dept of Artificial Intelligence and Data Science',
+    venue: '1st Floor, Lab -2, Dept of Artificial Intelligence & Data Science',
     teamSize: 'As per brochure event desk',
     description:
       'Bug Hunt is a technical coding event where participants identify, analyze, and fix errors (bugs) in given programs within a specified time. The event tests participants’ programming knowledge, debugging skills, logical thinking, and problem-solving ability. The objective of the event is to enhance coding efficiency, analytical skills, and understanding of programming concepts through error detection and correction.',
@@ -571,7 +571,7 @@ export const eventsData = [
     category: 'Technical',
     date: '16 May 2026',
     time: '10:00 AM - 01:00 PM',
-    venue: '1st Floor Electronics and Communication Engineering, Faculty of Engineering and Technology (Exclusively for Women), Sharnbasva University, Kalaburagi',
+    venue: '1st Floor, Electronics and Communication Engineering, Faculty of Engineering and Technology (Exclusively for Women)',
     teamSize: 'Individual or maximum 5 members',
     description:
       'Project Expo is an innovative event where students present their projects to demonstrate practical applications of engineering and technology. It provides a platform to showcase creativity, technical skills, and problem-solving abilities.',
@@ -608,7 +608,7 @@ export const eventsData = [
     category: 'Management',
     date: '16 May 2026',
     time: '10:00 AM - 12:00 Noon',
-    venue: 'Doddappa Appa Sabha Mantap',
+    venue: 'BBA[Co-Ed] Department',
     teamSize: 'Generally 2 members per team',
     description:
       "A knowledge quiz competition is an engaging intellectual activity designed to test participants' recall, critical thinking, and breadth of information across various topics. These competitions, often structured with multiple-choice, rapid-fire, or audio-visual rounds, aim to stimulate curiosity and foster a spirit of healthy competition. It encourages individuals to stay informed about the world around them while stimulating curiosity and a love for learning. These competitions can be held in various formats, such as team-based games or individual challenges. Participants often prepare by reading books, following news, and practicing with trivia databases. Beyond just facts, a quiz competition helps develop critical thinking and quick recall skills. It also promotes team spirit and collaboration when played in groups.",
@@ -826,7 +826,7 @@ export const eventsData = [
     category: 'Cultural',
     date: '15 May 2026',
     time: '02:00 PM - 05:00 PM',
-    venue: 'Doddappa Sabha Mantap',
+    venue: '2nd floor seminar hall, Dept of CSE, Faculty of Engineering and Technology (Exclusively for Women)',
     teamSize: 'Group song: 4 - 8 participants | Solo: individual',
     fee: 'Group Singing: Rs. 300 per group | Solo Singing: Rs. 100 per participant',
     description:
@@ -863,7 +863,7 @@ export const eventsData = [
     category: 'Cultural',
     date: '16 May 2026',
     time: '10:30 AM - 01:00 PM',
-    venue: 'Doddappa Sabha Mantap',
+    venue: 'Doddappa Appa Sabha Mantap',
     teamSize: 'Group dance: 4 - 6 participants | Solo: individual',
     fee: 'Group Dance: Rs. 300 per group | Solo Dance: Rs. 100 per participant',
     description:
@@ -908,7 +908,7 @@ export const eventsData = [
     category: 'Cultural',
     date: '16 May 2026',
     time: '08:30 AM - 10:00 AM',
-    venue: 'Doddappa Sabha Mantap',
+    venue: 'Doddappa Appa Sabha Mantap',
     teamSize: 'Group Ramp Walk: 4 - 6 participants | Solo: individual',
     fee: 'Group Ramp Walk: Rs. 300 per group | Solo Ramp Walk: Rs. 100 per participant',
     description:
@@ -946,7 +946,7 @@ export const eventsData = [
     category: 'Cultural',
     date: '16 May 2026',
     time: '01:30 PM - 02:30 PM',
-    venue: 'Doddappa Sabha Mantap',
+    venue: 'Doddappa Appa Sabha Mantap',
     teamSize: 'Individual',
     fee: 'Rs. 100 per participant',
     description:

@@ -237,11 +237,20 @@ export default function LiquidBackground() {
         window.addEventListener('pointermove', handlePointerMove, { passive: true })
         window.addEventListener('pointerleave', handlePointerLeave)
 
+        let lastRenderTime = 0;
+        const fpsInterval = 1000 / 30;
+
         renderer.setAnimationLoop(() => {
-          mouseCurrent.lerp(mouseTarget, 0.03)
-          uniforms.uTime.value = clock.getElapsedTime()
-          uniforms.uMouse.value.copy(mouseCurrent)
-          renderer.render(scene, camera)
+          const currentTime = performance.now();
+          const elapsed = currentTime - lastRenderTime;
+
+          if (elapsed > fpsInterval) {
+            lastRenderTime = currentTime - (elapsed % fpsInterval);
+            mouseCurrent.lerp(mouseTarget, 0.03)
+            uniforms.uTime.value = clock.getElapsedTime()
+            uniforms.uMouse.value.copy(mouseCurrent)
+            renderer.render(scene, camera)
+          }
         })
 
         cleanup = () => {
