@@ -27,6 +27,8 @@ const Navbar = () => {
       if (outcome === 'accepted') {
         setDeferredPrompt(null);
       }
+    } else {
+      alert('To install the Jnanothsava app on your device:\n\niOS: Tap the Share button (square with arrow) and select "Add to Home Screen".\n\nAndroid / Desktop: Use the "Add to Home Screen" or "Install" option in your browser menu.');
     }
   };
 
@@ -76,12 +78,10 @@ const Navbar = () => {
         </ul>
 
         <div className="navbar-actions">
-          {deferredPrompt && (
-            <button className="btn-install" onClick={handleInstallClick} aria-label="Install App">
-              <Download size={20} />
-              <span className="install-text">Install App</span>
-            </button>
-          )}
+          <button className="btn-install" onClick={handleInstallClick} aria-label="Install App">
+            <Download size={20} />
+            <span className="install-text">Install App</span>
+          </button>
           <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
