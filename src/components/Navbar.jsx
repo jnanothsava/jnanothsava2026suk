@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import universityLogo from '../assets/university-text-logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -25,15 +26,15 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Events', path: '/events' },
-    { name: 'More Info', path: '/info' },
+    { name: 'Schedule', path: '/schedule' },
     { name: 'Contact', path: '/contact' },
   ];
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
-        <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)}>
-          <span className="text-gradient">Sharnbasva University</span>
+        <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)} style={{ display: 'flex', alignItems: 'center' }}>
+          <img src={universityLogo} alt="University Logo" style={{ height: '70px', objectFit: 'contain' }} />
         </Link>
 
         <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>

@@ -1,59 +1,88 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { eventsData } from '../data/events';
+import { MapPin, ArrowRight } from 'lucide-react';
 import './Schedule.css';
 
+const parseTime = (timeStr) => {
+  if (!timeStr) return 0;
+  const match = timeStr.match(/(\d+):(\d+)\s*(AM|PM)/i);
+  if (!match) return 0;
+  let [_, hours, minutes, ampm] = match;
+  hours = parseInt(hours, 10);
+  if (ampm.toUpperCase() === 'PM' && hours < 12) hours += 12;
+  if (ampm.toUpperCase() === 'AM' && hours === 12) hours = 0;
+  return hours * 60 + parseInt(minutes, 10);
+};
+
 const Schedule = () => {
-  const scheduleData = {
-    day1: [
-      { time: '08:30 AM', event: 'Registration & Check-in', venue: 'Main Block' },
-      { time: '09:30 AM', event: 'Inauguration Ceremony', venue: 'Auditorium' },
-      { time: '11:00 AM', event: 'Knowledge Quest Prelims', venue: 'Seminar Hall A' },
-      { time: '12:00 PM', event: 'Lunch Break', venue: 'Food Court' },
-      { time: '02:00 PM', event: 'Robo Race', venue: 'Open Ground' },
-      { time: '03:00 PM', event: 'Singing Competition', venue: 'Auditorium' },
-    ],
-    day2: [
-      { time: '09:00 AM', event: 'Hackathon Starts', venue: 'CSE Lab 1 & 2' },
-      { time: '10:00 AM', event: 'Byte the Problem & Trade Quest', venue: 'Lab 3 & Computer Center' },
-      { time: '01:00 PM', event: 'Lunch Break', venue: 'Food Court' },
-      { time: '04:00 PM', event: 'Dance Competition', venue: 'Main Stage' },
-      { time: '07:30 PM', event: 'Valedictory & Prize Distribution', venue: 'Main Stage' },
-    ]
-  };
+  const eventsByDate = eventsData.reduce((acc, event) => {
+    if (!acc[event.date]) {
+      acc[event.date] = [];
+    }
+    acc[event.date].push(event);
+    return acc;
+  }, {});
+
+  // Sort dates
+  const sortedDates = Object.keys(eventsByDate).sort((a, b) => {
+    return new Date(a) - new Date(b);
+  });
+
+  // Sort events within each date by start time
+  sortedDates.forEach(date => {
+    eventsByDate[date].sort((a, b) => parseTime(a.time) - parseTime(b.time));
+  });
+
+  if (eventsByDate['15 May 2026']) {
+    eventsByDate['15 May 2026'].push({
+      id: 'live-in-concert',
+      title: 'Live in Concert by Aishwarya Rangarajan',
+      category: 'Special Attraction',
+      time: '06:00 PM Onwards',
+      venue: 'Main Stage',
+      isSpecial: true
+    });
+  }
 
   return (
-    <div className="container animate-fade-in" style={{ padding: '6rem 1.5rem', maxWidth: '800px' }}>
-      <h1 className="section-title">Fest <span className="text-gradient">Schedule</span></h1>
-
-      <div className="schedule-section">
-        <h2 className="schedule-day-title text-gradient">Day 1: May 15, 2026</h2>
-        <div className="timeline">
-          {scheduleData.day1.map((item, idx) => (
-            <div key={idx} className="timeline-item glass-panel">
-              <div className="timeline-time">{item.time}</div>
-              <div className="timeline-content">
-                <h3>{item.event}</h3>
-                <p>{item.venue}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+    <div className="container animate-fade-in page-shell">
+      <div className="schedule-header">
+        <h1 className="text-gradient">Interactive Schedule</h1>
+        <p>Explore the complete timeline of Jnanothsava 2026. Click on any event to view its complete details, rules, and coordinators.</p>
       </div>
 
-      <div className="schedule-section" style={{ marginTop: '4rem' }}>
-        <h2 className="schedule-day-title text-gradient">Day 2: May 16, 2026</h2>
-        <div className="timeline">
-          {scheduleData.day2.map((item, idx) => (
-            <div key={idx} className="timeline-item glass-panel">
-              <div className="timeline-time">{item.time}</div>
-              <div className="timeline-content">
-                <h3>{item.event}</h3>
-                <p>{item.venue}</p>
-              </div>
+      <div className="timeline">
+        {sortedDates.map(date => (
+          <React.Fragment key={date}>
+            <div className="timeline-day-header">
+              <h2>{date}</h2>
             </div>
-          ))}
-        </div>
+            
+            {eventsByDate[date].map((event, index) => (
+              <div key={event.id} className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <div className="timeline-time">{event.time}</div>
+                  <div className="timeline-category">{event.category}</div>
+                  <h3 className="timeline-title">{event.title}</h3>
+                  <div className="timeline-venue">
+                    <MapPin size={16} />
+                    <span>{event.venue}</span>
+                  </div>
+                  {!event.isSpecial && (
+                    <Link to={`/events/${event.id}`} className="timeline-link">
+                      View Details <ArrowRight size={16} />
+                    </Link>
+                  )}
+                </div>
+              </div>
+            ))}
+          </React.Fragment>
+        ))}
       </div>
     </div>
   );
 };
+
 export default Schedule;

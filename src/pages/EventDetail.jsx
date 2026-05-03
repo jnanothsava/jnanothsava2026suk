@@ -36,6 +36,8 @@ const EventDetail = () => {
             src={event.poster}
             alt={event.posterAlt || `${event.title} poster`}
             className="event-poster__image"
+            loading="lazy"
+            decoding="async"
           />
         )}
         <div className="event-poster__glow" />

@@ -54,6 +54,8 @@ const Home = () => {
               src={concertPoster}
               alt="Aishwarya Rangarajan live in concert poster"
               className="concert-spotlight-poster"
+              loading="lazy"
+              decoding="async"
             />
             <div className="concert-spotlight-copy">
               <p className="concert-spotlight-label">Special Attraction</p>
@@ -69,37 +71,37 @@ const Home = () => {
       <section className="highlights-section container">
         <h2 className="section-title">Fest <span className="text-gradient">Highlights</span></h2>
         <div className="highlights-grid">
-          <div className="highlight-card glass-panel">
+          <Link to="/events#technical-events" className="highlight-card glass-panel" style={{ display: 'block', textDecoration: 'none' }}>
             <div className="highlight-icon">
               <Code size={32} />
             </div>
             <h3>Technical Events</h3>
             <p>Hackathons, coding challenges, robotics, and project expos to test your technical prowess.</p>
-          </div>
+          </Link>
 
-          <div className="highlight-card glass-panel">
+          <Link to="/events#management-events" className="highlight-card glass-panel" style={{ display: 'block', textDecoration: 'none' }}>
             <div className="highlight-icon">
               <span style={{ color: 'var(--color-accent)' }}><Briefcase size={32} /></span>
             </div>
             <h3>Management Events</h3>
             <p>Stock market games, business quizzes, and strategy events to build future leaders.</p>
-          </div>
+          </Link>
 
-          <div className="highlight-card glass-panel">
+          <Link to="/events#cultural-events" className="highlight-card glass-panel" style={{ display: 'block', textDecoration: 'none' }}>
             <div className="highlight-icon">
               <Music size={32} />
             </div>
             <h3>Cultural Events</h3>
             <p>Dance, singing, ramp walks, and arts to showcase your creativity and talent.</p>
-          </div>
+          </Link>
 
-          <div className="highlight-card glass-panel">
+          <Link to="/about" className="highlight-card glass-panel" style={{ display: 'block', textDecoration: 'none' }}>
             <div className="highlight-icon">
               <span style={{ color: '#F59E0B' }}><Award size={32} /></span>
             </div>
             <h3>Certificates & Prizes</h3>
             <p>Win exciting cash prizes, goodies, and recognized certificates for participation and merit.</p>
-          </div>
+          </Link>
         </div>
       </section>
     </div>

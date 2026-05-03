@@ -6,6 +6,11 @@ import roboRacePoster from '../assets/posters/robo-race.jpeg';
 import visualArtPoster from '../assets/posters/spot-painting-mandala-art.jpeg';
 import hackathonPoster from '../assets/posters/enlighten-code.jpeg';
 import cadWarPoster from '../assets/posters/cad-war.jpeg';
+import knowledgeQuestPoster from '../assets/posters/knowledge-quest.jpg';
+import digiWorldPoster from '../assets/posters/digi-world.jpg';
+import byteTheProblemPoster from '../assets/posters/byte-the-problem.jpg';
+import rangoliMehandiReelsPoster from '../assets/posters/rangoli-mehandi-reels.jpg';
+import tradeQuestPoster from '../assets/posters/trade-quest.jpg';
 
 export const eventsData = [
   {
@@ -72,6 +77,8 @@ export const eventsData = [
     teamSize: 'Individual or team (maximum 2)',
     description:
       'This coding event is designed to test participants’ programming skills, logical thinking, and problem-solving abilities. Participants will solve a set of challenges within a given time, showcasing their efficiency, accuracy, and coding expertise.',
+    poster: byteTheProblemPoster,
+    posterAlt: 'Byte the Problem poster',
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
@@ -143,6 +150,8 @@ export const eventsData = [
     teamSize: 'Individual or team (maximum 5)',
     description:
       'DiGi World is a technology-focused event; all activities must align with digital or IoT-related themes. Participants can register individually or in teams, as specified for each event. All participants are expected to uphold the spirit of innovation and teamwork throughout the DiGi World event to showcase and discuss advancements in AI, cybersecurity, fintech, edtech, IoT, and digital governance. It serves as a platform for learning, networking, and exploring how digital technologies are transforming businesses and society.',
+    poster: digiWorldPoster,
+    posterAlt: 'DiGi World poster',
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
@@ -335,7 +344,7 @@ export const eventsData = [
     title: 'CAD War',
     category: 'Technical',
     date: '15 May 2026',
-    time: '11:30 AM - 01:00 PM',
+    time: '11:00 AM - 01:30 PM',
     venue: 'Department of Civil Engineering (Co-ed)',
     teamSize: 'Individual',
     description:
@@ -597,12 +606,14 @@ export const eventsData = [
     id: 'knowledge-quest',
     title: 'Knowledge Quest (Quiz Competition)',
     category: 'Management',
-    date: '15 May 2026',
+    date: '16 May 2026',
     time: '10:00 AM - 12:00 Noon',
     venue: 'Doddappa Appa Sabha Mantap',
     teamSize: 'Generally 2 members per team',
     description:
       "A knowledge quiz competition is an engaging intellectual activity designed to test participants' recall, critical thinking, and breadth of information across various topics. These competitions, often structured with multiple-choice, rapid-fire, or audio-visual rounds, aim to stimulate curiosity and foster a spirit of healthy competition. It encourages individuals to stay informed about the world around them while stimulating curiosity and a love for learning. These competitions can be held in various formats, such as team-based games or individual challenges. Participants often prepare by reading books, following news, and practicing with trivia databases. Beyond just facts, a quiz competition helps develop critical thinking and quick recall skills. It also promotes team spirit and collaboration when played in groups.",
+    poster: knowledgeQuestPoster,
+    posterAlt: 'Knowledge Quest poster',
     detailsSections: [
       {
         title: 'General Rules',
@@ -652,11 +663,13 @@ export const eventsData = [
     title: 'TradeQuest [Stock Market Game] - Adventure of Trading',
     category: 'Management',
     date: '15 May 2026',
-    time: '02:00 PM - 04:00 PM',
+    time: '02:00 PM - 05:00 PM',
     venue: 'Doddappa Appa Sabha Mantap',
     teamSize: 'Participant/team as per game desk',
     description:
       'Trade Quest – The Adventure of Trading is an immersive stock market simulation game designed to provide participants with a dynamic, real-time trading experience in a risk-free environment. By blending learning with excitement, the game enables players to buy and sell stocks using virtual currency, analyze market trends, and make strategic investment decisions. Structured as an interactive journey, Trade Quest fosters the development of essential financial skills such as analytical thinking, risk management, and decision-making. Ideal for students and aspiring investors, it transforms theoretical knowledge into practical exposure, making the world of trading both accessible and enjoyable.',
+    poster: tradeQuestPoster,
+    posterAlt: 'Trade Quest poster',
     detailsSections: [
       {
         title: 'Game Setup',
@@ -698,84 +711,55 @@ export const eventsData = [
     },
   },
   {
-    id: 'rangoli',
-    title: 'Rangoli',
+    id: 'rangoli-mehandi-reels',
+    title: 'Rangoli, Mehandi & Social Awareness Reels',
     category: 'Cultural',
     date: '15 May 2026',
-    time: '10:00 AM - 11:30 AM',
-    venue: 'Department of Kannada, Faculty of Languages',
+    time: 'Rangoli: 10:00 AM - 11:30 AM | Mehandi: 11:30 AM - 01:00 PM | Reels: 02:00 PM - 04:00 PM',
+    venue: 'Faculty of Languages (Dept. of Kannada & English)',
     teamSize: 'Individual',
-    description:
-      'Rangoli is a traditional art event where participants create colorful and creative designs using rangoli powder, flowers, grains, or other decorative materials. The event encourages artistic skills, creativity, cultural expression, and imagination among students. The objective of the event is to promote Indian culture and provide a platform for participants to showcase their talent in traditional and modern rangoli art.',
+    description: 'A vibrant showcase of cultural and social expression featuring traditional Rangoli, creative Mehandi designs, and impactful Social Awareness Reels. Participate in these creative events to express your artistic talent, cultural pride, and social responsibility.',
+    poster: rangoliMehandiReelsPoster,
+    posterAlt: 'Rangoli, Mehandi & Social Awareness Reels poster',
     detailsSections: [
       {
-        title: 'Key Rules and Regulations',
+        title: 'Rangoli Rules',
         items: [
           'Participants must complete the rangoli within the given time (usually 1 - 2 hours).',
           'Participants should bring their own materials. Only dry rangoli colors are allowed (no flowers or ready-made stencils, unless permitted).',
           'Rangoli should be based on the given theme (if any). Otherwise, participants can choose their own design.',
           'Rangoli must be made within the allotted space and participants should keep their area clean.',
-        ],
+        ]
       },
-    ],
-    contacts: {
-      faculty: [{ name: 'Prof. Jayamala Maka', phone: '7676747447' }],
-      student: [],
-    },
-  },
-  {
-    id: 'mehandi',
-    title: 'Mehandi',
-    category: 'Cultural',
-    date: '15 May 2026',
-    time: '11:30 AM - 01:00 PM',
-    venue: 'Lecture Hall 1, Department of English, Faculty of Languages',
-    teamSize: 'Individual',
-    description:
-      'Mehndi is a traditional art event where participants showcase their creativity and design skills through beautiful henna patterns on hands. The event encourages artistic talent, precision, cultural expression, and creativity among students. The objective of the event is to provide a platform for participants to display their mehndi designing skills and promote traditional art and culture.',
-    detailsSections: [
       {
-        title: 'Key Rules and Regulations',
+        title: 'Mehandi Rules',
         items: [
           'Each participant will be given 90 minutes to complete the design.',
           'Participants must bring their own mehndi cones and materials.',
           'Use of ready-made stickers, stencils, or printed designs is not allowed.',
           'Participants must maintain silence and discipline during the competition.',
           'No external help or copying from others is allowed.',
-        ],
+        ]
       },
-    ],
-    contacts: {
-      faculty: [{ name: 'Prof. Sunita N', phone: '9353369689' }],
-      student: [],
-    },
-  },
-  {
-    id: 'social-awareness-reels',
-    title: 'Social Awareness Reels',
-    category: 'Cultural',
-    date: '15 May 2026',
-    time: '02:00 PM - 04:00 PM',
-    venue: 'Lecture Hall 1, Department of Kannada, Faculty of Languages',
-    teamSize: 'Individual / team as per submission',
-    description:
-      'A short-form reel-making event centered on social awareness themes such as health, environment, education, and public responsibility. Participants create original 30 to 60 second reels that deliver a clear, respectful, and impactful message. This event combines creativity, digital storytelling, and social relevance in an engaging format.',
-    detailsSections: [
       {
-        title: 'Key Rules and Regulations',
+        title: 'Social Awareness Reels Rules',
         items: [
           'The reel must focus on a social awareness topic (e.g., health, environment, education, census awareness, etc.).',
           'The reel should be 30 to 60 seconds only.',
           'Content must be original. No copying or using others videos without permission.',
           'The message should be clear, respectful, and suitable for all audiences. Avoid offensive or inappropriate content.',
           'Participants must submit their reel before the deadline in the specified format/platform (e.g., WhatsApp, Google Drive, Instagram link).',
-        ],
-      },
+        ]
+      }
     ],
     contacts: {
-      faculty: [{ name: 'Prof. Swaroopa M.Y', phone: '9019754099' }],
-      student: [],
-    },
+      faculty: [
+        { name: 'Prof. Jayamala Maka (Rangoli)', phone: '7676747447' },
+        { name: 'Prof. Sunita N (Mehandi)', phone: '9353369689' },
+        { name: 'Prof. Swaroopa M.Y (Reels)', phone: '9019754099' }
+      ],
+      student: []
+    }
   },
   {
     id: 'spot-painting-and-mandala-art',
@@ -841,7 +825,7 @@ export const eventsData = [
     title: 'Singing Competition',
     category: 'Cultural',
     date: '15 May 2026',
-    time: '02:30 PM',
+    time: '02:00 PM - 05:00 PM',
     venue: 'Doddappa Sabha Mantap',
     teamSize: 'Group song: 4 - 8 participants | Solo: individual',
     fee: 'Group Singing: Rs. 300 per group | Solo Singing: Rs. 100 per participant',
@@ -878,7 +862,7 @@ export const eventsData = [
     title: 'Dance Competition',
     category: 'Cultural',
     date: '16 May 2026',
-    time: '10:30 AM',
+    time: '10:30 AM - 01:00 PM',
     venue: 'Doddappa Sabha Mantap',
     teamSize: 'Group dance: 4 - 6 participants | Solo: individual',
     fee: 'Group Dance: Rs. 300 per group | Solo Dance: Rs. 100 per participant',
@@ -923,7 +907,7 @@ export const eventsData = [
     title: 'Ramp Walk Competition',
     category: 'Cultural',
     date: '16 May 2026',
-    time: '08:30 AM',
+    time: '08:30 AM - 10:00 AM',
     venue: 'Doddappa Sabha Mantap',
     teamSize: 'Group Ramp Walk: 4 - 6 participants | Solo: individual',
     fee: 'Group Ramp Walk: Rs. 300 per group | Solo Ramp Walk: Rs. 100 per participant',
@@ -961,7 +945,7 @@ export const eventsData = [
     title: 'Standup Comedy Competition',
     category: 'Cultural',
     date: '16 May 2026',
-    time: '01:30 PM',
+    time: '01:30 PM - 02:30 PM',
     venue: 'Doddappa Sabha Mantap',
     teamSize: 'Individual',
     fee: 'Rs. 100 per participant',

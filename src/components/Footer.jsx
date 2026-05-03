@@ -34,9 +34,6 @@ const Footer = () => {
               <span style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                 <MapPin size={18} /> Sharnbasva University
               </span>
-              <span style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                <Phone size={18} /> +91 98765 43210
-              </span>
             </div>
           </div>
         </div>
