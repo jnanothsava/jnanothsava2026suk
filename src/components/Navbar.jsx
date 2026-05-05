@@ -84,16 +84,9 @@ const Navbar = () => {
         </div>
       </nav>
       {location.pathname === '/' && document.body && createPortal(
-        <div className="install-popup-card">
-          <div className="install-popup-info">
-            <span className="install-popup-title">Install App</span>
-            <span className="install-popup-desc">Install to view offline</span>
-          </div>
-          <button className="btn-primary btn-install-action" onClick={handleInstallClick} aria-label="Install App">
-            <Download size={18} />
-            <span>Install</span>
-          </button>
-        </div>,
+        <button className="btn-install-floating" onClick={handleInstallClick} aria-label="Install App">
+          <Download size={24} />
+        </button>,
         document.body
       )}
     </>
