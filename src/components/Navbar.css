@@ -83,8 +83,8 @@
 }
 
 .btn-install-floating {
-  position: fixed;
-  top: 140px;
+  position: absolute;
+  top: 130px;
   right: 1.5rem;
   display: flex;
   align-items: center;

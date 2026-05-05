@@ -13,6 +13,7 @@ import rangoliMehandiReelsPoster from '../assets/posters/rangoli-mehandi-reels.j
 import tradeQuestPoster from '../assets/posters/trade-quest.jpg';
 import posterPresentationPoster from '../assets/posters/poster-presentation.jpg';
 import projectExpoPoster from '../assets/posters/project-expo.jpg';
+import wasteToWearPoster from '../assets/posters/waste-to-wear.jpg';
 
 export const eventsData = [
   {
@@ -808,6 +809,8 @@ export const eventsData = [
     teamSize: 'Individual or teams (max 3 - 4 members)',
     description:
       'Waste to Wear is a creative and eco-friendly fashion event where participants design unique costumes using recyclable and waste materials and showcase them confidently on the ramp. The event combines creativity, sustainability, fashion, and stage presentation skills while promoting environmental awareness. The objective of the event is to encourage students to transform waste materials into innovative wearable designs and spread the message of recycling and environmental protection through fashion.',
+    poster: wasteToWearPoster,
+    posterAlt: 'Waste to Wear event poster',
     detailsSections: [
       {
         title: 'Key Rules and Regulations',
