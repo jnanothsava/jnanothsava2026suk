@@ -1,36 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Download } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import universityLogo from '../assets/university-text-logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [deferredPrompt, setDeferredPrompt] = useState(null);
   const location = useLocation();
-
-  useEffect(() => {
-    const handleBeforeInstallPrompt = (e) => {
-      e.preventDefault();
-      setDeferredPrompt(e);
-    };
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-    return () => window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
-  }, []);
-
-
-  const handleInstallClick = async () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      if (outcome === 'accepted') {
-        setDeferredPrompt(null);
-      }
-    } else {
-      alert('To install the Jnanothsava app on your device:\n\niOS: Tap the Share button (square with arrow) and select "Add to Home Screen".\n\nAndroid / Desktop: Use the "Add to Home Screen" or "Install" option in your browser menu.');
-    }
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,8 +31,7 @@ const Navbar = () => {
   ];
 
   return (
-    <>
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container navbar-container">
           <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)} style={{ display: 'flex', alignItems: 'center' }}>
             <img src={universityLogo} alt="University Logo" style={{ height: '120px', objectFit: 'contain' }} />
@@ -85,12 +61,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      <button className="btn-install-floating" onClick={handleInstallClick} aria-label="Install App">
-        <Download size={22} />
-        <span className="install-text">Install App</span>
-      </button>
-    </>
   );
 };
 

@@ -48,7 +48,7 @@ const Schedule = () => {
   return (
     <div className="container animate-fade-in page-shell">
       <div className="schedule-header">
-        <h1 className="text-gradient">Interactive Schedule</h1>
+        <h1 className="text-gradient">Schedule Timeline</h1>
         <p>Explore the complete timeline of Jnanothsava 2026. Click on any event to view its complete details, rules, and coordinators.</p>
       </div>
 

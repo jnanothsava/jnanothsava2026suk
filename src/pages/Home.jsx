@@ -1,13 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Code, Briefcase, Music, Award, FileText, CalendarDays, ArrowRight } from 'lucide-react';
+import { Code, Briefcase, Music, Award, FileText, CalendarDays, ArrowRight, Download } from 'lucide-react';
 import concertPoster from '../assets/posters/live-in-concert.jpeg';
 import universityBanner from '../assets/university-banner.jpg';
 import './Home.css';
 
 const Home = () => {
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+
+  useEffect(() => {
+    const handler = (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+    window.addEventListener('beforeinstallprompt', handler);
+    return () => window.removeEventListener('beforeinstallprompt', handler);
+  }, []);
+
+  const handleInstallClick = async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') setDeferredPrompt(null);
+    } else {
+      alert('To install the app:\n\niOS: Tap Share → "Add to Home Screen"\nAndroid / Desktop: Use "Install" or "Add to Home Screen" from browser menu.');
+    }
+  };
+
   return (
     <div className="animate-fade-in">
+      {/* Install App — fixed top-right, only on Home */}
+      <button className="btn-install-floating" onClick={handleInstallClick} aria-label="Install App">
+        <Download size={20} />
+        <span className="install-text">Install App</span>
+      </button>
       <section className="hero">
         <div className="container hero-content">
           <h1 className="hero-title">
