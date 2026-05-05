@@ -31,9 +31,14 @@ const Footer = () => {
           <div className="footer-col">
             <h3>Contact Info</h3>
             <div className="footer-links">
-              <span style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-                <MapPin size={18} /> Sharnbasva University
-              </span>
+              <a
+                href="https://maps.app.goo.gl/nETsHRpSFEazpppu5?g_st=ic"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', color: 'inherit', textDecoration: 'none' }}
+              >
+                <MapPin size={18} /> Sharnbasva University, Kalaburagi
+              </a>
             </div>
           </div>
         </div>

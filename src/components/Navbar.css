@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 130px;
   display: flex;
   align-items: center;
   z-index: 1000;
@@ -82,22 +82,28 @@
   z-index: 1001;
 }
 
-.btn-install {
+.btn-install-floating {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   background: var(--color-primary-light);
   color: white;
-  padding: 0.4rem 1rem;
-  border-radius: 2rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
+  z-index: 1000;
 }
 
-.btn-install:hover {
+.btn-install-floating:hover {
   background: var(--color-primary);
-  transform: translateY(-2px);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 

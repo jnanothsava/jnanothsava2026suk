@@ -54,13 +54,14 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="container navbar-container">
-        <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)} style={{ display: 'flex', alignItems: 'center' }}>
-          <img src={universityLogo} alt="University Logo" style={{ height: '70px', objectFit: 'contain' }} />
-        </Link>
+    <>
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+        <div className="container navbar-container">
+          <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)} style={{ display: 'flex', alignItems: 'center' }}>
+            <img src={universityLogo} alt="University Logo" style={{ height: '120px', objectFit: 'contain' }} />
+          </Link>
 
-        <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
+          <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
           {navItems.map((item) => (
             <li key={item.name}>
               <Link
@@ -77,17 +78,19 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="navbar-actions">
-          <button className="btn-install" onClick={handleInstallClick} aria-label="Install App">
-            <Download size={20} />
-            <span className="install-text">Install App</span>
-          </button>
-          <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          <div className="navbar-actions">
+            <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+
+      <button className="btn-install-floating" onClick={handleInstallClick} aria-label="Install App">
+        <Download size={22} />
+        <span className="install-text">Install App</span>
+      </button>
+    </>
   );
 };
 

@@ -11,6 +11,8 @@ import digiWorldPoster from '../assets/posters/digi-world.jpg';
 import byteTheProblemPoster from '../assets/posters/byte-the-problem.jpg';
 import rangoliMehandiReelsPoster from '../assets/posters/rangoli-mehandi-reels.jpg';
 import tradeQuestPoster from '../assets/posters/trade-quest.jpg';
+import posterPresentationPoster from '../assets/posters/poster-presentation.jpg';
+import projectExpoPoster from '../assets/posters/project-expo.jpg';
 
 export const eventsData = [
   {
@@ -387,6 +389,8 @@ export const eventsData = [
     teamSize: 'Individual or max 2',
     description:
       'Poster Presentation is a technical event where participants visually present their ideas, research, or concepts using well-designed posters. It combines creativity with technical knowledge, allowing students to communicate complex information in a clear and engaging format.',
+    poster: posterPresentationPoster,
+    posterAlt: 'Poster Presentation event poster',
     detailsSections: [
       {
         title: 'Poster Rules',
@@ -575,6 +579,8 @@ export const eventsData = [
     teamSize: 'Individual or maximum 5 members',
     description:
       'Project Expo is an innovative event where students present their projects to demonstrate practical applications of engineering and technology. It provides a platform to showcase creativity, technical skills, and problem-solving abilities.',
+    poster: projectExpoPoster,
+    posterAlt: 'Project Expo event poster',
     detailsSections: [
       {
         title: 'Rules',

@@ -10,12 +10,6 @@ const Home = () => {
     <div className="animate-fade-in">
       <section className="hero">
         <div className="container hero-content">
-          <img 
-            src={universityBanner} 
-            alt="Centenary Celebrated Sharnbasveshwar Vidya Vardhaka Sangha's Sharnbasva University" 
-            className="hero-university-banner" 
-          />
-          <p className="hero-presents" style={{ color: 'var(--color-text-muted)', fontSize: '1.2rem', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: '1rem', marginTop: '-1rem' }}>Presents</p>
           <h1 className="hero-title">
             <span className="hero-title-main">Jnanothsava</span>
             <span className="hero-title-year">2026</span>
@@ -37,7 +31,7 @@ const Home = () => {
           </div>
           <div className="hero-documents">
             <a
-              href="/brochure.pdf"
+              href="/New brochure.pdf"
               target="_blank"
               rel="noreferrer"
               className="document-link-card glass-panel"
