@@ -54,7 +54,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container navbar-container">
           <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)} style={{ display: 'flex', alignItems: 'center' }}>
-            <img src={universityLogo} alt="University Logo" style={{ height: '150px', objectFit: 'contain' }} />
+            <img src={universityLogo} alt="University Logo" style={{ height: '130px', objectFit: 'contain', transform: 'scale(1.3)', transformOrigin: 'left center' }} />
           </Link>
 
           <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
@@ -78,7 +78,6 @@ const Navbar = () => {
             {location.pathname === '/' && (
               <button className="btn-install-floating" onClick={handleInstallClick} aria-label="Install App" style={{ position: 'relative', top: 0, right: 0 }}>
                 <Download size={20} />
-                <span className="install-text">Install App</span>
               </button>
             )}
             <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
