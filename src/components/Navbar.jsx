@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Download } from 'lucide-react';
 import universityLogo from '../assets/university-text-logo.png';
@@ -82,7 +83,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      {location.pathname === '/' && (
+      {location.pathname === '/' && document.body && createPortal(
         <div className="install-popup-card">
           <div className="install-popup-info">
             <span className="install-popup-title">Install App</span>
@@ -92,7 +93,8 @@ const Navbar = () => {
             <Download size={18} />
             <span>Install</span>
           </button>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
