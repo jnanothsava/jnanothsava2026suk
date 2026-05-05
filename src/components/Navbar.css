@@ -83,13 +83,16 @@
 }
 
 .btn-install-floating {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
   display: flex;
-  margin-right: 1.5rem;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, rgba(107, 33, 168, 0.85), rgba(6, 182, 212, 0.85));
   color: white;
-  padding: 0.65rem;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   font-weight: 600;
   font-size: 0.875rem;

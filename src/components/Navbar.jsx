@@ -51,7 +51,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <>
+      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container navbar-container">
           <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)} style={{ display: 'flex', alignItems: 'center' }}>
             <img src={universityLogo} alt="University Logo" style={{ height: '130px', objectFit: 'contain', transform: 'scale(1.3)', transformOrigin: 'left center' }} />
@@ -75,17 +76,18 @@ const Navbar = () => {
         </ul>
 
           <div className="navbar-actions">
-            {location.pathname === '/' && (
-              <button className="btn-install-floating" onClick={handleInstallClick} aria-label="Install App" style={{ position: 'relative', top: 0, right: 0 }}>
-                <Download size={20} />
-              </button>
-            )}
             <button className="mobile-menu-btn" onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>
       </nav>
+      {location.pathname === '/' && (
+        <button className="btn-install-floating" onClick={handleInstallClick} aria-label="Install App">
+          <Download size={24} />
+        </button>
+      )}
+    </>
   );
 };
 
