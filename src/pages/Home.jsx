@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Code, Briefcase, Music, Award, FileText, CalendarDays, ArrowRight, Sparkles } from 'lucide-react';
+import { Code, Briefcase, Music, Award, FileText, CalendarDays, ArrowRight } from 'lucide-react';
 import concertPoster from '../assets/posters/live-in-concert.jpeg';
 import universityBanner from '../assets/university-banner.jpg';
 import './Home.css';
@@ -12,17 +12,10 @@ const Home = () => {
     <div className="animate-fade-in">
       <section className="hero">
         <div className="container hero-content">
-          <div className="hero-title-wrapper">
-            <h1 className="hero-title">
-              <span className="hero-title-main">Jnanothsava</span>
-              <span className="hero-title-year">2026</span>
-            </h1>
-            <Sparkles className="sparkle sparkle-1" size={32} />
-            <Sparkles className="sparkle sparkle-2" size={24} />
-            <Sparkles className="sparkle sparkle-3" size={40} />
-            <Sparkles className="sparkle sparkle-4" size={20} />
-            <Sparkles className="sparkle sparkle-5" size={28} />
-          </div>
+          <h1 className="hero-title">
+            <span className="hero-title-main">Jnanothsava</span>
+            <span className="hero-title-year">2026</span>
+          </h1>
           <div className="hero-badge" style={{ color: '#ffffff', backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.3)' }}>May 15-16, 2026</div>
           <h2 className="hero-tagline">Innovate. Compete. Celebrate.</h2>
           <p className="hero-subtext">
