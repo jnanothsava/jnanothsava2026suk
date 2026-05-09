@@ -14,6 +14,7 @@ import tradeQuestPoster from '../assets/posters/trade-quest.jpg';
 import posterPresentationPoster from '../assets/posters/poster-presentation.jpg';
 import projectExpoPoster from '../assets/posters/project-expo.jpg';
 import wasteToWearPoster from '../assets/posters/waste-to-wear.jpg';
+import lensRacePoster from '../assets/posters/lens-race.jpg';
 
 export const eventsData = [
   {
@@ -187,6 +188,8 @@ export const eventsData = [
     teamSize: 'Individual',
     description:
       'Lens Race is a time-bound photography competition where participants must capture images based on given themes or tasks. The goal is to showcase creativity, storytelling, and technical skills through the lens.',
+    poster: lensRacePoster,
+    posterAlt: 'Lens Race event poster',
     detailsSections: [
       {
         title: 'Competition Format',
@@ -834,8 +837,8 @@ export const eventsData = [
     title: 'Singing Competition',
     category: 'Cultural',
     date: '15 May 2026',
-    time: '02:00 PM - 05:00 PM',
-    venue: '2nd floor seminar hall, Dept of CSE, Faculty of Engineering and Technology (Exclusively for Women)',
+    time: '10:00 AM - 01:00 PM',
+    venue: 'Dodappa Appa Sabha Manatap',
     teamSize: 'Group song: 4 - 8 participants | Solo: individual',
     fee: 'Group Singing: Rs. 300 per group | Solo Singing: Rs. 100 per participant',
     description:
@@ -872,7 +875,7 @@ export const eventsData = [
     category: 'Cultural',
     date: '16 May 2026',
     time: '10:30 AM - 01:00 PM',
-    venue: 'Doddappa Appa Sabha Mantap',
+    venue: 'University Play ground',
     teamSize: 'Group dance: 4 - 6 participants | Solo: individual',
     fee: 'Group Dance: Rs. 300 per group | Solo Dance: Rs. 100 per participant',
     description:
@@ -917,7 +920,7 @@ export const eventsData = [
     category: 'Cultural',
     date: '16 May 2026',
     time: '08:30 AM - 10:00 AM',
-    venue: 'Doddappa Appa Sabha Mantap',
+    venue: 'University Play ground',
     teamSize: 'Group Ramp Walk: 4 - 6 participants | Solo: individual',
     fee: 'Group Ramp Walk: Rs. 300 per group | Solo Ramp Walk: Rs. 100 per participant',
     description:
@@ -955,7 +958,7 @@ export const eventsData = [
     category: 'Cultural',
     date: '16 May 2026',
     time: '01:30 PM - 02:30 PM',
-    venue: 'Doddappa Appa Sabha Mantap',
+    venue: 'University Play ground',
     teamSize: 'Individual',
     fee: 'Rs. 100 per participant',
     description:
