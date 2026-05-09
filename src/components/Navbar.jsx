@@ -56,7 +56,7 @@ const Navbar = () => {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container navbar-container">
           <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)} style={{ display: 'flex', alignItems: 'center' }}>
-            <img src={universityLogo} alt="University Logo" decoding="async" style={{ height: '130px', objectFit: 'contain', transform: 'scale(1.3)', transformOrigin: 'left center' }} />
+            <img src={universityLogo} alt="University Logo" decoding="async" className="logo-image" />
           </Link>
 
           <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
