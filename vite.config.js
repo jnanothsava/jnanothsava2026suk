@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.png', 'og-image.jpg', 'Brochure.pdf', 'final_schedule.pdf', 'final_schedule.docx'],
+      includeAssets: ['favicon.png', 'og-image.jpg', 'brochure.pdf', 'final_schedule.pdf', 'final_schedule.docx'],
       manifest: {
         name: 'Jnanothsava 2026',
         short_name: 'Jnanothsava',
@@ -30,4 +30,14 @@ export default defineConfig({
       }
     })
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          lucide: ['lucide-react']
+        }
+      }
+    }
+  }
 })

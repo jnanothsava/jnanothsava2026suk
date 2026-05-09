@@ -33,7 +33,7 @@ const Home = () => {
           </div>
           <div className="hero-documents">
             <a
-              href="/Brochure.pdf"
+              href="/brochure.pdf"
               target="_blank"
               rel="noreferrer"
               className="document-link-card glass-panel"

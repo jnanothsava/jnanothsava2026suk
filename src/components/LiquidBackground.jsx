@@ -190,7 +190,7 @@ export default function LiquidBackground() {
           powerPreference: 'high-performance',
         })
 
-        renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75))
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.25))
         renderer.setClearColor(0x04000a, 1)
         renderer.domElement.className = 'liquid-background__canvas'
         container.prepend(renderer.domElement)
