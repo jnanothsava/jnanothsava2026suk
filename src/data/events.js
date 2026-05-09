@@ -15,6 +15,7 @@ import posterPresentationPoster from '../assets/posters/poster-presentation.jpg'
 import projectExpoPoster from '../assets/posters/project-expo.jpg';
 import wasteToWearPoster from '../assets/posters/waste-to-wear.jpg';
 import lensRacePoster from '../assets/posters/lens-race.jpg';
+import scienceExhibitionPoster from '../assets/posters/science-exhibition.jpg';
 
 export const eventsData = [
   {
@@ -264,6 +265,8 @@ export const eventsData = [
     teamSize: 'Individual or teams (maximum 2 - 3 members)',
     description:
       'A Science Exhibition is an interactive academic event where students present innovative ideas through working models, experiments, and research-based projects. It serves as a platform to transform theoretical knowledge into practical applications, allowing participants to demonstrate how science can be used to solve real-world problems.',
+    poster: scienceExhibitionPoster,
+    posterAlt: 'Science Exhibition event poster',
     detailsSections: [
       {
         title: 'Themes and Categories',
