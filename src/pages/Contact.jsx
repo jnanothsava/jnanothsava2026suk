@@ -48,6 +48,16 @@ const Contact = () => {
           </p>
         </div>
 
+        <div className="content-panel content-panel--padded" style={{ textAlign: 'center' }}>
+          <Phone size={40} className="text-gradient" style={{ margin: '0 auto 1rem' }} />
+          <h3>Accommodation Committee</h3>
+          <p className="muted-copy" style={{ marginTop: '0.5rem', lineHeight: '1.8' }}>
+            Dr. Basavaraj Mammani: <a href="tel:+919916010753" style={{ color: 'inherit' }}>+91 99160 10753</a><br />
+            Dr. AnilKumar C N: <a href="tel:+91953826999" style={{ color: 'inherit' }}>+91 95382 6999</a><br />
+            Prof. Rahul Rathod: <a href="tel:+919738905649" style={{ color: 'inherit' }}>+91 97389 05649</a>
+          </p>
+        </div>
+
       </div>
     </div>
   );

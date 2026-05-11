@@ -16,6 +16,7 @@ import projectExpoPoster from '../assets/posters/project-expo.jpg';
 import wasteToWearPoster from '../assets/posters/waste-to-wear.jpg';
 import lensRacePoster from '../assets/posters/lens-race.jpg';
 import scienceExhibitionPoster from '../assets/posters/science-exhibition.jpg';
+import techQuizPoster from '../assets/posters/tech-quiz.jpg';
 
 export const eventsData = [
   {
@@ -441,6 +442,8 @@ export const eventsData = [
     teamSize: 'Team of 2',
     description:
       'Tech Quiz is an interactive and knowledge-based competition designed to test participants’ technical awareness, problem-solving ability, and understanding of current and emerging technologies. The event includes questions from various domains such as computer science, engineering, programming, general technology, inventions, current trends, and aptitude. The objective of the event is to enhance technical knowledge, analytical thinking, teamwork, and competitive spirit among students.',
+    poster: techQuizPoster,
+    posterAlt: 'Tech Quiz event poster',
     detailsSections: [
       {
         title: 'Competition Rules',
