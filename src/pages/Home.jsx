@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Code, Briefcase, Music, Award, FileText, CalendarDays, ArrowRight } from 'lucide-react';
 import concertPoster from '../assets/posters/live-in-concert.jpeg';
 import universityBanner from '../assets/university-banner.jpg';
+import Countdown from '../components/Countdown';
 import './Home.css';
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
             A Techno-Cultural Fest designed to ignite minds
             and bring out the extraordinary in you.
           </p>
+          <Countdown targetDate="2026-05-15T09:00:00" />
           <div className="hero-actions">
             <Link to="/events" className="btn-primary btn-explore">
               <span>Explore Events</span>
@@ -33,7 +35,7 @@ const Home = () => {
           </div>
           <div className="hero-documents">
             <a
-              href="/brochure.pdf"
+              href="/brochure.pdf?v=2"
               target="_blank"
               rel="noreferrer"
               className="document-link-card glass-panel"
