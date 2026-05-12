@@ -35,7 +35,7 @@ const Home = () => {
           </div>
           <div className="hero-documents">
             <a
-              href={`/brochure.pdf?v=${new Date().getTime()}`}
+              href="/brochure.pdf"
               target="_blank"
               rel="noreferrer"
               className="document-link-card glass-panel"
