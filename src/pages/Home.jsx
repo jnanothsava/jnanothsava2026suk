@@ -39,7 +39,6 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
               className="document-link-card glass-panel"
-              download="Jnanothsava2026_Brochure.pdf"
             >
               <FileText size={22} />
               <span>Brochure</span>
