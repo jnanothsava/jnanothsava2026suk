@@ -35,10 +35,11 @@ const Home = () => {
           </div>
           <div className="hero-documents">
             <a
-              href="/brochure.pdf?v=2"
+              href={`/brochure.pdf?v=${new Date().getTime()}`}
               target="_blank"
               rel="noreferrer"
               className="document-link-card glass-panel"
+              download="Jnanothsava2026_Brochure.pdf"
             >
               <FileText size={22} />
               <span>Brochure</span>
